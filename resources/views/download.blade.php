@@ -1,6 +1,6 @@
 <x-layout.layout>
 <x-slot:heading>
-    Download your Youtube videos here
+    Controleer uw aanvraag hier
 </x-slot:heading>
 <h1 class="ml-2">
 </h1>

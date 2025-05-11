@@ -1,21 +1,15 @@
 <x-layout.layout>
 <x-slot:heading>
-    Transcribe your videos here
+    Doneer nu aan de Lief & Leed pot
 </x-slot:heading>
-<h1 class="ml-2">
-    Max file upload size 20mb:
-</h1>
 <div class="flex flex-row m-2 h-[70vh] border border-gray-200 rounded-lg">
     <div class="w-1/6 bg-white flex flex-col justify-center border border-gray-200 rounded-l-lg p-2">
-        <div class="h-1/3 flex justify-center">
-            Upload videos here:
+        <div class="h-1/5 flex justify-center">
+
         </div>
-        <div class="h-2/3 overflow-scroll">
-            <form action="/savefile" method="post" enctype="multipart/form-data">
-                @csrf
-                <input class="border border-gray-300 hover:bg-gray-300 p-1 rounded" type="file" name="uploadedFile" id="fileUpload">
-                <x-file-upload.button class="my-2" type="submit">Upload</x-file-upload.button>
-            </form>
+        <div class="h-4/5 overflow-scroll">
+            <h1 class="font-bold">Kies uw maandelijkse donatie:</h1>
+            <livewire:radio/>
             <div>
                 @if($errors->any())
                 <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
@@ -34,30 +28,44 @@
             </div>
         </div>
     </div>
-    <div class="w-4/6 flex justify-center bg-white p-2 border border-gray-200">
-        <div class="overflow-auto">
-            @foreach($files as $file)
-                <ul>
-                    <li class="flex flex-row p-2">
-                        <div>
-                            <livewire:loading :fileName="$file->getFilename()">
-                        </div>
-                        <form action="/deletefile" method="post">
-                            @csrf
-                            {{ $file->getFilename(); }}
-                            <input type="hidden" name="path" value="{{ 'files/'.$file->getFilename(); }}">
-                            <button class="border border-red-400 rounded bg-red-300 hover:bg-red-500 text-white px-1">Delete</button>
-                        </form>
-                    </li>
-                </ul>
-            @endforeach
+    <div class="w-4/6 flex flex-col bg-white p-2 border border-gray-200">
+        <div class="h-1/5">
+
+        </div>
+        <div>
+            <div class="flex justify-center font-bold">
+                <h1>Laat uw gegevens achter:</h1>
+            </div>
+            <br>
+            <div class="flex justify-center">
+                <label for="">V.naam:</label>
+                <input type="text" class="border">
+            </div>
+            <br>
+            <div class="flex justify-center">
+                <label for="">A.naam:</label>
+                <input type="text" class="border">
+            </div>
+            <br>
+            <div class="flex justify-center">
+                <button class="bg-almere text-white p-1 rounded hover:bg-blue-700">
+                    Versturen
+                </button>
+            </div>
         </div>
     </div>
     <div class="w-1/6 flex flex-col justify-center bg-white border border-gray-200 rounded-r-lg p-2 overflow-auto">
-        <div class="h-1/6">
-            <h1>Retrieve .docx here:</h1>
+        <div class="h-1/5">
+
         </div>
-        <div class="h-5/6">
+        <div class="h-4/5">
+            <h1 class="font-bold">Recente sponsors:</h1>
+            <ul class="ps-2 mt-2 space-y-2 list-disc list-inside">
+                <li>Hans Bouwer</li>
+                <li>Klaas van de Fries</li>
+                <li>Petra van Vliet</li>
+                <li>Richard Bouwdewijn</li>
+            </ul>
         @foreach($docs as $doc)
         <ul>
             <li>

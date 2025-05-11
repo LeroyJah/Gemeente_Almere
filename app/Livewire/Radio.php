@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Radio extends Component
 {
-    public $radioValue = "360";
+    public $radioValue = "0,65";
 
     public function changeName(){
 

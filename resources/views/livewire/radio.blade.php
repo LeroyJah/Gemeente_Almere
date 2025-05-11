@@ -1,13 +1,13 @@
 <div>
-    <div class="m-2">
-            <input type="radio" value="360" wire:model.live="radioValue">
-            <label for="">360p</label><br>
-            <input type="radio" value="480" wire:model.live="radioValue">
-            <label for="">480p</label><br>
-            <input type="radio" value="720" wire:model.live="radioValue">
-            <label for="">720p</label><br>
-            <input type="radio" value="1080" wire:model.live="radioValue">
-            <label for="">1080p</label><br>
+    <div class="my-1 border-2 border-gray-200 rounded p-2">
+            <input type="radio" value="0,65" wire:model.live="radioValue">
+            <label for="">€0,65</label><br>
+            <input type="radio" value="1,30" wire:model.live="radioValue">
+            <label for="">€1,30</label><br>
+            <input type="radio" value="2,-" wire:model.live="radioValue">
+            <label for="">€2,-</label><br>
+            <input type="radio" value="2,50" wire:model.live="radioValue">
+            <label for="">€2,50</label><br>
     </div>
-    <p>The quality is: {{ $radioValue }}</p>
+    <p>Het maandelijkse bedrag word: €{{ $radioValue }}</p>
 </div>

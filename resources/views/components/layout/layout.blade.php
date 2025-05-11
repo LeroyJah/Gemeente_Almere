@@ -16,19 +16,19 @@
   ```
 -->
 <div class="min-h-full">
-  <nav class="bg-gray-800">
+  <nav class="bg-almere">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="shrink-0">
-            <img class="size-8" src="{{ asset('images/IMG_1514.jpg') }}" alt="JahGPT">
+            <img class="size-12 rounded" src="{{ asset('images/Almere_logo.png') }}" alt="JahGPT">
           </div>
           <!-- Nav Bar -->
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-              <x-nav-link href="/download/view" :active="request()->is('download/view')">Video Download</x-nav-link>
-              <x-nav-link href="/transcribe/view" :active="request()->is('transcribe/view')">Transcribe</x-nav-link>
+              <x-nav-link href="/download/view" :active="request()->is('download/view')">Lief & Leed</x-nav-link>
+              <x-nav-link href="/transcribe/view" :active="request()->is('transcribe/view')">Doneer</x-nav-link>
             </div>
           </div>
         </div>
