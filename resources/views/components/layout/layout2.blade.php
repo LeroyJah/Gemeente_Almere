@@ -6,7 +6,7 @@
     <title>Whisper</title>
     @vite('resources/css/app.css')
 </head>
-<body class="h-full">
+<body class="h-full bg-almere-bg">
 <!--
   This example requires updating your template:
 
