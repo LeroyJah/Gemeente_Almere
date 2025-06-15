@@ -9,6 +9,9 @@
         </header>
         <div class="flex justify-center">
             <img src="{{ asset('images/stadhuis.jpg') }}" alt="" class="h-140 w-5/6 rounded relative shadow-lg z-0">
+            <div class="absolute z-10 bg-almere text-white border-2 border-white rounded p-4 w-100 flex justify-center mt-20">
+                Welkom Doflamingo
+            </div>
             <div class="grid grid-cols-3 z-10 absolute gap-14 bottom-4 slide-in">
                 <div>
                     <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
