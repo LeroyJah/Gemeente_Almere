@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whisper</title>
+    <title>Gemeente</title>
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
 <body class="h-full bg-almere-bg">
 <!--

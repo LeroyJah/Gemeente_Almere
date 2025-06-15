@@ -9,7 +9,7 @@
         </header>
         <div class="flex justify-center">
             <img src="{{ asset('images/stadhuis.jpg') }}" alt="" class="h-140 w-5/6 rounded relative shadow-lg z-0">
-            <div class="grid grid-cols-3 z-10 absolute gap-14 bottom-4">
+            <div class="grid grid-cols-3 z-10 absolute gap-14 bottom-4 slide-in">
                 <div>
                     <div class="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
                         <div class="px-6 py-4">
