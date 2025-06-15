@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DownloadController extends Controller
+class ValidateController extends Controller
 {
     public function getView(){
-        return view('download');
+        return view('validate');
     }
 }
