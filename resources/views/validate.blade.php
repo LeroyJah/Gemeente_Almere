@@ -7,8 +7,9 @@
 <div class="m-2 h-[70vh] border border-gray-200 rounded-lg bg-white">
     <div>
         <div class="flex justify-center m-5">
-            <label for="person">Naam collega:</label>
+            <label class="pt-1 mr-5" for="person">Naam collega:</label>
             <input type="text" name="person" class="border">
+{{--            <button class="ml-6 p-1 border border-solid rounded bg-almere text-white hover:bg-blue-700">voeg toe</button>--}}
         </div>
         <div class="flex flex-row ">
             <div class="w-1/3 p-2 flex justify-center">
@@ -51,19 +52,44 @@
             </div>
         </div>
         <div>
-{{--            @foreach($bedragen as $bedrag => $value)--}}
-{{--                {{ $value }}--}}
-{{--            @endforeach--}}
+            <div class="grid grid-cols-3 p-5">
+                <div class="border border-gray-300 font-bold">Naam:</div>
+                <div class="border border-gray-300 font-bold">Gelegenheid:</div>
+                <div class="border border-gray-300 font-bold">Status:</div>
 
-            @foreach($bedragen as $bedrag)
-                {{ $bedrag }}
-            @endforeach
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300">-</div>
+            </div>
+            <div class="grid grid-cols-3 p-5">
+                <div class="border border-gray-300 font-bold">Naam:</div>
+                <div class="border border-gray-300 font-bold">Gelegenheid:</div>
+                <div class="border border-gray-300 font-bold">Status:</div>
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300">40 jaar huwelijk</div>
+                <div class="text-center border border-gray-300">afgewezen</div>
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300">12,5 jaar ambtenaar</div>
+                <div class="text-center border border-gray-300">toegekend 12-5-2025</div>
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300">30ste verjaardag</div>
+                <div class="text-center border border-gray-300">toegekend 17-6-2025</div>
+            </div>
+            <div class="overflow-auto">
+                {{--            @foreach($bedragen as $bedrag => $value)--}}
+                {{--                {{ $value }}--}}
+                {{--            @endforeach--}}
 
-            <ul>
-                @foreach(array_keys($bedragen) as $key)
-                   <li> {{ $key }} </li>
+                @foreach($bedragen as $bedrag)
+                    {{ $bedrag }}
                 @endforeach
-            </ul>
+
+                <ul>
+                    @foreach(array_keys($bedragen) as $key)
+                        <li> {{ $key }} </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </div>
 </div>
