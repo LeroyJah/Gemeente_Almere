@@ -14,7 +14,7 @@ class HomeController extends Controller
         "Lars",
         "Julia",
         "Sam",
-        "Noor",
+        "Floor",
         "Finn",
         "Mila",
         "Joris"
