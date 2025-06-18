@@ -1,70 +1,73 @@
 <div>
-    <label class="pt-1 mr-5" for="person">Naam collega:</label>
-    <input type="text" name="person" class="border" wire:model.live="liveName">
-
-    <div class="flex flex-row ">
-        <div class="w-1/3 p-2 flex justify-center">
-            <div>
-                <h1 class="font-bold">Verjaardagen:</h1>
-                <select name="" id="">
-                    <option value="">30ste verjaardag</option>
-                    <option value="">40ste verjaardag</option>
-                    <option value="">50ste verjaardag</option>
-                    <option value="">60ste verjaardag</option>
-                    <option value="">65ste verjaardag</option>
-                </select>
-            </div>
+    <div>
+        <div class="flex justify-center">
+            <label class="pt-1 mr-5" for="person">Naam collega:</label>
+            <input type="text" name="person" class="border" wire:model.live="liveName">
         </div>
-        <div class="w-1/3 p-2 flex justify-center">
-            <div>
-                <div class="h-2/5">
-                    <h1 class="font-bold">Huwelijk:</h1>
+        <div class="flex flex-row ">
+            <div class="w-1/3 p-2 flex justify-center">
+                <div>
+                    <h1 class="font-bold">Verjaardagen:</h1>
                     <select name="" id="">
-                        <option value="">12,5 jaar huwelijk</option>
-                        <option value="">25 jaar huwelijk</option>
-                        <option value="">40 jaar huwelijk</option>
+                        <option value="">30ste verjaardag</option>
+                        <option value="">40ste verjaardag</option>
+                        <option value="">50ste verjaardag</option>
+                        <option value="">60ste verjaardag</option>
+                        <option value="">65ste verjaardag</option>
                     </select>
                 </div>
-                <br>
-                <div class="flex justify-center">
-                    <button class="bg-almere text-white p-1 rounded hover:bg-blue-700">Controleer</button>
+            </div>
+            <div class="w-1/3 p-2 flex justify-center">
+                <div>
+                    <div class="h-2/5">
+                        <h1 class="font-bold">Huwelijk:</h1>
+                        <select name="" id="">
+                            <option value="">12,5 jaar huwelijk</option>
+                            <option value="">25 jaar huwelijk</option>
+                            <option value="">40 jaar huwelijk</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="flex justify-center">
+                        <button class="bg-almere text-white p-1 rounded hover:bg-blue-700">Controleer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 p-2 flex justify-center">
+                <div>
+                    <h1 class="font-bold">Jaren ambtenaar:</h1>
+                    <select wire:model.live="liveGift">
+                        <option value="12,5 jaar">12,5 jaar</option>
+                        <option value="25 jaar">25 jaar</option>
+                        <option value="40 jaar">40 jaar</option>
+                    </select>
                 </div>
             </div>
         </div>
-        <div class="w-1/3 p-2 flex justify-center">
-            <div>
-                <h1 class="font-bold">Jaren ambtenaar:</h1>
-                <select name="" id="">
-                    <option value="">12,5 jaar</option>
-                    <option value="">25 jaar</option>
-                    <option value="">40 jaar</option>
-                </select>
+        <div>
+            <div class="grid grid-cols-3 p-5">
+                <div class="border border-gray-300 font-bold">Naam:</div>
+                <div class="border border-gray-300 font-bold">Gelegenheid:</div>
+                <div class="border border-gray-300 font-bold">Status:</div>
+
+                <div class="text-center border border-gray-300">{{ $liveName }}</div>
+                <div class="text-center border border-gray-300">{{ $liveGift }}</div>
+                <div class="text-center border border-gray-300">-</div>
+            </div>
+            <div class="grid grid-cols-3 p-5">
+                <div class="border border-gray-300 font-bold">Naam:</div>
+                <div class="border border-gray-300 font-bold">Gelegenheid:</div>
+                <div class="border border-gray-300 font-bold">Status:</div>
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300">40 jaar huwelijk</div>
+                <div class="text-center border border-gray-300">afgewezen</div>
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300">12,5 jaar ambtenaar</div>
+                <div class="text-center border border-gray-300">toegekend 12-5-2025</div>
+                <div class="text-center border border-gray-300"></div>
+                <div class="text-center border border-gray-300">30ste verjaardag</div>
+                <div class="text-center border border-gray-300">toegekend 17-6-2025</div>
             </div>
         </div>
     </div>
-
-    <div>
-        <div class="grid grid-cols-3 p-5">
-            <div class="border border-gray-300 font-bold">Naam:</div>
-            <div class="border border-gray-300 font-bold">Gelegenheid:</div>
-            <div class="border border-gray-300 font-bold">Status:</div>
-
-            <div class="text-center border border-gray-300">{{ $liveName }}</div>
-            <div class="text-center border border-gray-300"></div>
-            <div class="text-center border border-gray-300">-</div>
-        </div>
-        <div class="grid grid-cols-3 p-5">
-            <div class="border border-gray-300 font-bold">Naam:</div>
-            <div class="border border-gray-300 font-bold">Gelegenheid:</div>
-            <div class="border border-gray-300 font-bold">Status:</div>
-            <div class="text-center border border-gray-300"></div>
-            <div class="text-center border border-gray-300">40 jaar huwelijk</div>
-            <div class="text-center border border-gray-300">afgewezen</div>
-            <div class="text-center border border-gray-300"></div>
-            <div class="text-center border border-gray-300">12,5 jaar ambtenaar</div>
-            <div class="text-center border border-gray-300">toegekend 12-5-2025</div>
-            <div class="text-center border border-gray-300"></div>
-            <div class="text-center border border-gray-300">30ste verjaardag</div>
-            <div class="text-center border border-gray-300">toegekend 17-6-2025</div>
-        </div>
 </div>
