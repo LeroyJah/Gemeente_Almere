@@ -7,8 +7,8 @@
 <div class="m-2 h-[70vh] border border-gray-200 rounded-lg bg-white">
     <div>
         <div class="flex justify-center m-5">
-            <label class="pt-1 mr-5" for="person">Naam collega:</label>
-            <input type="text" name="person" class="border">
+
+            <livewire:validator/>
 {{--            <button class="ml-6 p-1 border border-solid rounded bg-almere text-white hover:bg-blue-700">voeg toe</button>--}}
         </div>
         <div class="flex flex-row ">
@@ -80,14 +80,14 @@
                 {{--                {{ $value }}--}}
                 {{--            @endforeach--}}
 
-                @foreach($bedragen as $bedrag)
-                    {{ $bedrag }}
-                @endforeach
+{{--                @foreach($bedragen as $bedrag)--}}
+{{--                    {{ $bedrag }}--}}
+{{--                @endforeach--}}
 
-                <ul>
-                    @foreach(array_keys($bedragen) as $key)
-                        <li> {{ $key }} </li>
-                    @endforeach
+{{--                <ul>--}}
+{{--                    @foreach(array_keys($bedragen) as $key)--}}
+{{--                        <li> {{ $key }} </li>--}}
+{{--                    @endforeach--}}
                 </ul>
             </div>
         </div>
