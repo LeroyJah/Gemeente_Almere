@@ -12,10 +12,13 @@ class Validator extends Component
 
     public function checkAnswer()
     {
-        dd($this->rightAnswer);
+        $input = [$this->liveName,$this->liveGift];
 
-
-        return redirect()->route('homeView')->with(session()->flash('status','Your gift request has ben sent.'));
+        if( $input === $this->rightAnswer){
+            return redirect()->route('validateView')->with(session()->flash('status','Your gift request has ben sent.'));
+        }else{
+            return redirect()->route('validateView')->with(session()->flash('status','Your gift request could not be sent.'));
+        }
     }
     public function render()
     {

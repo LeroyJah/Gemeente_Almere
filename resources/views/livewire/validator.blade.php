@@ -4,7 +4,7 @@
             <label class="pt-1 mr-5" for="person">Naam collega:</label>
             <input type="text" name="person" class="border" wire:model.live="liveName">
         </div>
-        <div class="flex flex-row ">
+        <div class="flex flex-row">
             <div class="w-1/3 p-2 flex justify-center">
                 <div>
                     <h1 class="font-bold">Verjaardagen:</h1>
@@ -27,12 +27,6 @@
                             <option value="40 jaar huwelijk">40 jaar huwelijk</option>
                         </select>
                     </div>
-                    <br>
-                    <div class="flex justify-center">
-                        <form wire:submit="checkAnswer">
-                            <button type="submit" class="bg-almere text-white p-1 rounded hover:bg-blue-700">Controleer</button>
-                        </form>
-                    </div>
                 </div>
             </div>
             <div class="w-1/3 p-2 flex justify-center">
@@ -45,6 +39,14 @@
                     </select>
                 </div>
             </div>
+        </div>
+        <div class="flex justify-center">
+            <form wire:submit="checkAnswer">
+                <button type="submit" class="bg-almere text-white p-1 rounded hover:bg-blue-700 mx-auto">Controleer</button>
+            </form>
+        </div>
+        <div class="flex justify-center">
+            {{ session('status') }}
         </div>
         <div>
             <div class="grid grid-cols-3 p-5">
