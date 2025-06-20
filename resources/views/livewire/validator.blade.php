@@ -29,7 +29,9 @@
                     </div>
                     <br>
                     <div class="flex justify-center">
-                        <button class="bg-almere text-white p-1 rounded hover:bg-blue-700">Controleer</button>
+                        <form wire:submit="checkAnswer">
+                            <button type="submit" class="bg-almere text-white p-1 rounded hover:bg-blue-700">Controleer</button>
+                        </form>
                     </div>
                 </div>
             </div>

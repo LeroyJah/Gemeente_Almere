@@ -8,10 +8,14 @@ class Validator extends Component
 {
     public $liveName;
     public $liveGift;
+    public $rightAnswer = ['Jahmil','30ste verjaardag'];
 
-    public function save()
+    public function checkAnswer()
     {
-        return redirect()->route('validateView')->with(session()->flash('status','Your gift request has ben sent.'));
+        dd($this->rightAnswer);
+
+
+        return redirect()->route('homeView')->with(session()->flash('status','Your gift request has ben sent.'));
     }
     public function render()
     {
