@@ -15,9 +15,9 @@ class Validator extends Component
         $input = [$this->liveName,$this->liveGift];
 
         if( $input === $this->rightAnswer){
-            return redirect()->route('validateView')->with(session()->flash('status','Your gift request has ben sent.'));
+            return redirect()->route('validateView')->with(session()->flash('status_green','Your gift request has ben sent.'));
         }else{
-            return redirect()->route('validateView')->with(session()->flash('status','Your gift request could not be sent.'));
+            return redirect()->route('validateView')->with(session()->flash('status_red','Your gift request could not be sent.'));
         }
     }
     public function render()

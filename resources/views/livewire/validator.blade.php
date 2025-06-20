@@ -46,7 +46,15 @@
             </form>
         </div>
         <div class="flex justify-center">
-            {{ session('status') }}
+            @if(session('status_red'))
+                <div class="border border-red-600 bg-red-200 m-2 p-2 rounded">
+                    {{ session('status_red') }}
+                </div>
+            @elseif(session('status_green'))
+                <div class="border border-green-600 bg-green-200 m-2 p-2 rounded">
+                    {{ session('status_green') }}
+                </div>
+            @endif
         </div>
         <div>
             <div class="grid grid-cols-3 p-5">
