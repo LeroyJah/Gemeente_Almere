@@ -12,7 +12,7 @@ class Validator extends Component
 
     public function checkAnswer()
     {
-        $input = [$this->liveName,$this->liveGift];
+        $input = [ucfirst($this->liveName),$this->liveGift];
 
         if( $input === $this->rightAnswer){
             return redirect()->route('validateView')->with(session()->flash('status_green','Your gift request has ben sent.'));

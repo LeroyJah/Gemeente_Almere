@@ -73,7 +73,7 @@
                     <div class="border border-gray-300 font-bold">Status:</div>
                     <div class="text-center border border-gray-300"></div>
                     <div class="text-center border border-gray-300">40 jaar huwelijk</div>
-                    <div class="text-center border border-gray-300">afgewezen</div>
+                    <div class="text-center border border-gray-300">afgewezen <button class="border px-1 hover:bg-gray-300" wire:click="checkAnswer" wire:confirm="are you sure?">Delete</button></div>
                     <div class="text-center border border-gray-300"></div>
                     <div class="text-center border border-gray-300">12,5 jaar ambtenaar</div>
                     <div class="text-center border border-gray-300">toegekend 12-5-2025</div>
