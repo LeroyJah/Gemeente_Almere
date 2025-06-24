@@ -7,9 +7,17 @@ use Livewire\Component;
 
 class Validator extends Component
 {
+//    #[Validate('required', message: 'Voeg aub een naam toe.')]
     public $liveName;
     public $liveGift;
     public $rightAnswer = ['Jahmil','30ste verjaardag'];
+
+    protected function rules(){
+        return [
+          'liveName' => 'required',
+            'liveGift' => 'required'
+        ];
+    }
 
     public function checkAnswer()
     {
@@ -24,6 +32,8 @@ class Validator extends Component
 
     public function storeRequest()
     {
+        $validated = $this->validate();
+
         Validate::create([
             'name' => ucfirst($this->liveName),
             'occassion' => $this->liveGift
