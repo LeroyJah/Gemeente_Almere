@@ -66,6 +66,9 @@
                 <div class="text-center border border-gray-300">{{ $liveGift }}</div>
                 <div class="text-center border border-gray-300">-</div>
             </div>
+            <div class="flex justify-center">
+                <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="checkAnswer" wire:confirm="Weet u het zeker?">Bevestigen</button>
+            </div>
             <div class="mt-20">
                 <div class="grid grid-cols-3 p-5">
                     <div class="border border-gray-300 font-bold">Naam:</div>
@@ -73,7 +76,7 @@
                     <div class="border border-gray-300 font-bold">Status:</div>
                     <div class="text-center border border-gray-300"></div>
                     <div class="text-center border border-gray-300">40 jaar huwelijk</div>
-                    <div class="text-center border border-gray-300">afgewezen <button class="border px-1 hover:bg-gray-300" wire:click="checkAnswer" wire:confirm="are you sure?">Delete</button></div>
+                    <div class="text-center border border-gray-300">afgewezen</div>
                     <div class="text-center border border-gray-300"></div>
                     <div class="text-center border border-gray-300">12,5 jaar ambtenaar</div>
                     <div class="text-center border border-gray-300">toegekend 12-5-2025</div>

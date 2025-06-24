@@ -15,10 +15,15 @@ class Validator extends Component
         $input = [ucfirst($this->liveName),$this->liveGift];
 
         if( $input === $this->rightAnswer){
-            return redirect()->route('validateView')->with(session()->flash('status_green','Your gift request has ben sent.'));
+            return redirect()->route('validateView')->with(session()->flash('status_green','Uw verzoek is beschikbaar.'));
         }else{
-            return redirect()->route('validateView')->with(session()->flash('status_red','Your gift request could not be sent.'));
+            return redirect()->route('validateView')->with(session()->flash('status_red','Uw verzoek is niet beschikbaar.'));
         }
+    }
+
+    public function storeRequest()
+    {
+
     }
     public function render()
     {
