@@ -11,9 +11,9 @@
 {{--            <button class="ml-6 p-1 border border-solid rounded bg-almere text-white hover:bg-blue-700">voeg toe</button>--}}
         </div>
         <div class="overflow-auto">
-            {{--            @foreach($bedragen as $bedrag => $value)--}}
-            {{--                {{ $value }}--}}
-            {{--            @endforeach--}}
+{{--                        @foreach($bedragen as $bedrag => $value)--}}
+{{--                            {{ $value }}--}}
+{{--                        @endforeach--}}
 
 {{--                @foreach($bedragen as $bedrag)--}}
 {{--                    {{ $bedrag }}--}}
@@ -23,7 +23,7 @@
 {{--                    @foreach(array_keys($bedragen) as $key)--}}
 {{--                        <li> {{ $key }} </li>--}}
 {{--                    @endforeach--}}
-            </ul>
+{{--            </ul>--}}
         </div>
     </div>
 </div>

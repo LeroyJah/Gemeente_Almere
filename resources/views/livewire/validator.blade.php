@@ -2,6 +2,7 @@
     <div>
         <div class="flex justify-center m-5">
             <label class="pt-1 mr-5" for="person">Naam collega:</label>
+            {{-- Component for binding text input data onto a LiveWire variable --}}
             <input type="text" name="person" class="border" wire:model.live="liveName">
         </div>
         <div class="flex flex-row">
@@ -61,13 +62,13 @@
                 <div class="border border-gray-300 font-bold">Naam:</div>
                 <div class="border border-gray-300 font-bold">Gelegenheid:</div>
                 <div class="border border-gray-300 font-bold">Status:</div>
-
                 <div class="text-center border border-gray-300">{{ $liveName }}</div>
                 <div class="text-center border border-gray-300">{{ $liveGift }}</div>
                 <div class="text-center border border-gray-300">-</div>
             </div>
             <div class="flex justify-center">
-                <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="checkAnswer" wire:confirm="Weet u het zeker?">Bevestigen</button>
+                {{-- LiveWire alert message --}}
+                <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" wire:confirm="Weet u het zeker?">Bevestigen</button>
             </div>
             <div class="mt-20">
                 <div class="grid grid-cols-3 p-5">

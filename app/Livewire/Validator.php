@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Validate;
 use Livewire\Component;
 
 class Validator extends Component
@@ -23,7 +24,12 @@ class Validator extends Component
 
     public function storeRequest()
     {
+        Validate::create([
+            'name' => ucfirst($this->liveName),
+            'occassion' => $this->liveGift
+        ]);
 
+        return redirect()->route('validateView')->with(session()->flash('',''));
     }
     public function render()
     {

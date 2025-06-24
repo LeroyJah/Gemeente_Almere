@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('occassion');
-            $table->boolean('status');
+            $table->boolean('status')->nullable();
             $table->timestamps();
         });
     }
