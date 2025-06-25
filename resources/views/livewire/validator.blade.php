@@ -42,7 +42,8 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <form wire:submit="checkAnswer">
+            <form wire:submit="checkAnswer" class="flex">
+                <h1>1.</h1>
                 <button type="submit" class="bg-almere text-white p-1 rounded hover:bg-blue-700 mx-auto">Controleer</button>
             </form>
         </div>
@@ -68,25 +69,10 @@
             </div>
             <div class="flex justify-center">
                 {{-- LiveWire alert message --}}
+                <h1>2.</h1>
                 <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" wire:confirm="Weet u het zeker?">Bevestigen</button>
                 <div>@error('liveName') {{ $message }} @enderror</div>
                 <div>@error('liveGift') {{ $message }} @enderror</div>
-            </div>
-            <div class="mt-20">
-                <div class="grid grid-cols-3 p-5">
-                    <div class="border border-gray-300 font-bold">Naam:</div>
-                    <div class="border border-gray-300 font-bold">Gelegenheid:</div>
-                    <div class="border border-gray-300 font-bold">Status:</div>
-                    <div class="text-center border border-gray-300"></div>
-                    <div class="text-center border border-gray-300">40 jaar huwelijk</div>
-                    <div class="text-center border border-gray-300">afgewezen</div>
-                    <div class="text-center border border-gray-300"></div>
-                    <div class="text-center border border-gray-300">12,5 jaar ambtenaar</div>
-                    <div class="text-center border border-gray-300">toegekend 12-5-2025</div>
-                    <div class="text-center border border-gray-300"></div>
-                    <div class="text-center border border-gray-300">30ste verjaardag</div>
-                    <div class="text-center border border-gray-300">toegekend 17-6-2025</div>
-                </div>
             </div>
         </div>
     </div>

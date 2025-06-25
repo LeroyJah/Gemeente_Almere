@@ -3,21 +3,16 @@
 namespace App\Livewire;
 
 use App\Models\Validate;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 
 class Validator extends Component
 {
-//    #[Validate('required', message: 'Voeg aub een naam toe.')]
+    #[Rule('string|required|min:3|max:15')]
     public $liveName;
+    #[Rule('required')]
     public $liveGift;
     public $rightAnswer = ['Jahmil','30ste verjaardag'];
-
-    protected function rules(){
-        return [
-          'liveName' => 'required',
-            'liveGift' => 'required'
-        ];
-    }
 
     public function checkAnswer()
     {
@@ -32,7 +27,7 @@ class Validator extends Component
 
     public function storeRequest()
     {
-        $validated = $this->validate();
+       $this->validate();
 
         Validate::create([
             'name' => ucfirst($this->liveName),
