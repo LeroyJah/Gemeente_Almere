@@ -8,14 +8,16 @@ use Livewire\Component;
 
 class Validator extends Component
 {
-    #[Rule('string|required|min:3|max:15')]
+    #[Rule('string|required|min:3|max:15',as:'"naam"')]
     public $liveName;
-    #[Rule('required')]
+    #[Rule('required',as:'"gelegenheid"')]
     public $liveGift;
     public $rightAnswer = ['Jahmil','30ste verjaardag'];
 
     public function checkAnswer()
     {
+        $this->validate();
+
         $input = [ucfirst($this->liveName),$this->liveGift];
 
         if( $input === $this->rightAnswer){

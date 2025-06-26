@@ -63,16 +63,23 @@
                 <div class="border border-gray-300 font-bold">Naam:</div>
                 <div class="border border-gray-300 font-bold">Gelegenheid:</div>
                 <div class="border border-gray-300 font-bold">Status:</div>
-                <div class="text-center border border-gray-300">{{ $liveName }}</div>
-                <div class="text-center border border-gray-300">{{ $liveGift }}</div>
+                <div class="text-center border border-gray-300">{{ $liveName }}
+                    <div class="text-red-500">
+                        @error('liveName') {{ $message }} @enderror
+                    </div>
+                </div>
+                <div class="text-center border border-gray-300">
+                    {{ $liveGift }}
+                    <div class="text-red-500">
+                            @error('liveGift') {{ $message }} @enderror
+                    </div>
+                </div>
                 <div class="text-center border border-gray-300">-</div>
             </div>
             <div class="flex justify-center">
                 {{-- LiveWire alert message --}}
                 <h1>2.</h1>
                 <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" wire:confirm="Weet u het zeker?">Bevestigen</button>
-                <div>@error('liveName') {{ $message }} @enderror</div>
-                <div>@error('liveGift') {{ $message }} @enderror</div>
             </div>
         </div>
     </div>
