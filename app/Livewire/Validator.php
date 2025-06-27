@@ -8,9 +8,13 @@ use Livewire\Component;
 
 class Validator extends Component
 {
-    #[Rule('string|required|min:3|max:15',as:'"naam"')]
+
+    #[Rule('required', message:'Dit veld moet ingevuld worden.')]
+    #[Rule('regex:/^[a-zA-Z]+$/', message:'Dit veld mag alleen letters bevatten.')]
+    #[Rule('min:3', message:'Dit veld moet minimaal bestaan uit 3 characters.')]
+    #[Rule('max:15', message:'Dit veld mag maximaal bestaan uit 15 characters.')]
     public $liveName;
-    #[Rule('required',as:'"gelegenheid"')]
+    #[Rule('required',message:'Kies een van de pakketten.')]
     public $liveGift;
     public $rightAnswer = ['Jahmil','30ste verjaardag'];
 
@@ -36,7 +40,7 @@ class Validator extends Component
             'occassion' => $this->liveGift
         ]);
 
-        return redirect()->route('validateView')->with(session()->flash('',''));
+        return redirect()->route('validateView')->with(session()->flash('bevestigd','Uw aanvraag is in goede orde ontvangen'));
     }
     public function render()
     {
