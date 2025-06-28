@@ -27,14 +27,6 @@
         </div>
     </div>
 </div>
-<div class="mt-20 border border-gray-200 rounded-lg bg-white">
-    <div class="grid grid-cols-3 p-5">
-        <div class="border border-gray-300 font-bold">Naam:</div>
-        <div class="border border-gray-300 font-bold">Gelegenheid:</div>
-        <div class="border border-gray-300 font-bold">Status:</div>
-        <div class="text-center border border-gray-300">-</div>
-        <div class="text-center border border-gray-300">-</div>
-        <div class="text-center border border-gray-300">-</div>
-    </div>
-</div>
+<livewire:show-latest/>
+
 </x-layout.layout>
