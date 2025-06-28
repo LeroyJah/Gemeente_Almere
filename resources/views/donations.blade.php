@@ -60,12 +60,24 @@
         </div>
         <div class="h-4/5">
             <h1 class="font-bold">Recente sponsors:</h1>
-            <ul class="ps-2 mt-2 space-y-2 list-disc list-inside">
-                <li>Hans Bouwer</li>
-                <li>Klaas van de Fries</li>
-                <li>Petra van Vliet</li>
-                <li>Richard Bouwdewijn</li>
-            </ul>
+            <table>
+                <tr>
+                    <td>- Hans Bouwer</td>
+                    <td>€0,65</td>
+                </tr>
+                <tr>
+                    <td>- Klaas van de Fries</td>
+                    <td>€1,30</td>
+                </tr>
+                <tr>
+                    <td>- Petra van Vliet</td>
+                    <td>€2,50</td>
+                </tr>
+                <tr>
+                    <td>- Richard Bouwdewijn</td>
+                    <td>€0,65</td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
