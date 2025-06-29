@@ -43,12 +43,6 @@
             </div>
         </div>
         <div class="flex justify-center">
-{{--            <form wire:submit="checkAnswer" class="flex">--}}
-{{--                <h1>1.</h1>--}}
-{{--                <button type="submit" class="bg-yellow-400 text-white p-1 rounded hover:bg-yellow-600 mx-auto">Controleer</button>--}}
-{{--            </form>--}}
-        </div>
-        <div class="flex justify-center">
             @if(session('status_red'))
                 <div class="border border-red-600 bg-red-200 m-2 p-2 rounded">
                     {{ session('status_red') }}

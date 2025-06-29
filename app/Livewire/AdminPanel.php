@@ -16,6 +16,8 @@ class AdminPanel extends Component
     public function delete($id)
     {
         Validate::where('id',$id)->delete();
+
+        $this->redirect('/admin');
     }
     public function render()
     {
