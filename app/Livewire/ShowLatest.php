@@ -13,7 +13,9 @@ class ShowLatest extends Component
 
     public function boot()
     {
-        $this->latest = $this->validate = Validate::latest()->first();
+        if(Validate::first()){
+            $this->latest = $this->validate = Validate::latest()->first();
+        }
     }
 
     public function render()

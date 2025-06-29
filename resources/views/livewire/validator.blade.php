@@ -78,7 +78,7 @@
                 </div>
                 <div class="text-center border border-gray-300">
                     @if($liveGift)
-                        {{ $bedragen[$liveGift] }}
+                        €{{ $bedragen[$liveGift] }}
                     @endif
                 </div>
                 <div class="text-center border border-gray-300">-</div>
@@ -86,7 +86,6 @@
             {{-- LiveWire confirm message --}}
             <div class="flex justify-center">
                 <div class="flex">
-                    <h1>2.</h1>
                     <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" wire:confirm="Weet u het zeker?">Bevestigen</button>
                 </div>
                 @if(session('bevestigd'))

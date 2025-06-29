@@ -12,6 +12,7 @@ class Validate extends Model
     protected $fillable =
         [
             'name',
-            'occassion'
+            'occassion',
+            'amount'
         ];
 }

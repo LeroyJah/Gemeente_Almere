@@ -44,7 +44,8 @@ class Validator extends Component
 
         Validate::create([
             'name' => ucfirst($this->liveName),
-            'occassion' => $this->liveGift
+            'occassion' => $this->liveGift,
+            'amount' => $this->bedragen[$this->liveGift]
         ]);
 
         return redirect()->route('validateView')->with(session()->flash('bevestigd','Uw aanvraag is in goede orde ontvangen'));
