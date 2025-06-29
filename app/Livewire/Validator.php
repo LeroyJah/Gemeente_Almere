@@ -20,6 +20,8 @@ class Validator extends Component
 
     public $bedragen;
 
+    public $showErrors = false;
+
 
     public function mount($bedragen)
     {

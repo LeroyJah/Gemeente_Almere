@@ -67,14 +67,22 @@
                 <div class="border border-gray-300 font-bold">Status:</div>
                 <div class="text-center border border-gray-300">{{ $liveName }}
                     <div class="text-red-500">
-                        @error('liveName') {{ $message }} @enderror
+                        @error('liveName')
+                        <div wire:transition>
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
                 </div>
                 <div class="text-center border border-gray-300">
                     {{ $liveGift }}
-                    <div class="text-red-500">
-                            @error('liveGift') {{ $message }} @enderror
-                    </div>
+                        <div class="text-red-500">
+                            @error('liveGift')
+                            <div wire:transition>
+                            {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
                 </div>
                 <div class="text-center border border-gray-300">
                     @if($liveGift)
