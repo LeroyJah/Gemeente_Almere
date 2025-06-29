@@ -7,7 +7,7 @@
 <div class="m-2 border border-gray-200 rounded-lg bg-white">
     <div>
         <div class="m-5">
-            <livewire:validator/>
+            <livewire:validator :bedragen="$bedragen"/>
 {{--            <button class="ml-6 p-1 border border-solid rounded bg-almere text-white hover:bg-blue-700">voeg toe</button>--}}
         </div>
         <div class="overflow-auto">
@@ -25,7 +25,6 @@
 {{--                    @endforeach--}}
 {{--            </ul>--}}
         </div>
-{{--        {{ $bedragen['geboorte'] }}--}}
     </div>
 </div>
 <livewire:show-latest/>

@@ -20,34 +20,18 @@ class Validator extends Component
 
     public $bedragen;
 
-    public function mount()
-    {
-        $this->bedragen = [
-            "geboorte" => 25,
-            "ziek" => 25,
-            "ziek-3-weken" => 25,
-            "ziek-3-maanden" => 25,
-            "ziekenhuis-opname" => 25,
-            "huwelijk-12,5" => 40,
-            "huwelijk-25" => 25,
-            "huwelijk-40" => 40,
-            "pensioen" => 25,
-            "verjaardag-50" => 25,
-            "verjaardag-65" => 25,
-            "ambtenaar-12,5" => 25,
-            "ambtenaar-25" => 25,
-            "ambtenaar-40" => 40,
-            "overlijden" => 50
-        ];
-    }
 
+    public function mount($bedragen)
+    {
+        $this->bedragen = $bedragen; //grabbing validation array from view
+    }
     public function checkAnswer()
     {
         $this->validate();
 
-        $input = [ucfirst($this->liveName),$this->liveGift];
+        $input = [ucfirst($this->liveName),$this->liveGift]; //Capitalizes the first letter of each name
 
-        if( $input === $this->rightAnswer){
+        if( $input === $this->rightAnswer){ //validation tester
             return redirect()->route('validateView')->with(session()->flash('status_green','Uw verzoek is beschikbaar.'));
         }else{
             return redirect()->route('validateView')->with(session()->flash('status_red','Uw verzoek is niet beschikbaar.'));
@@ -56,7 +40,7 @@ class Validator extends Component
 
     public function storeRequest()
     {
-       $this->validate();
+       $this->validate(); //validates the user input before passing it to the DB, if the validation fails then the users is redirected with an error message
 
         Validate::create([
             'name' => ucfirst($this->liveName),
@@ -65,8 +49,14 @@ class Validator extends Component
 
         return redirect()->route('validateView')->with(session()->flash('bevestigd','Uw aanvraag is in goede orde ontvangen'));
     }
+
+    public function clearFields()
+    {
+        $this->liveGift = "";
+        $this->liveName = "";
+    }
     public function render()
     {
-        return view('livewire.validator',['bedragen' => $this->bedragen]);
+        return view('livewire.validator');
     }
 }

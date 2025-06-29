@@ -4,6 +4,7 @@
             <label class="pt-1 mr-5" for="person">Naam collega:</label>
             {{-- Component for binding text input data onto a LiveWire variable --}}
             <input type="text" name="person" class="border" wire:model.live="liveName">
+            <button class="ml-2 px-2 border rounded bg-blue-300 hover:bg-blue-700 text-white" wire:click="clearFields">clear</button>
         </div>
         <div class="flex flex-row">
             <div class="w-1/3 p-2 flex justify-center">
@@ -42,10 +43,10 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <form wire:submit="checkAnswer" class="flex">
-                <h1>1.</h1>
-                <button type="submit" class="bg-almere text-white p-1 rounded hover:bg-blue-700 mx-auto">Controleer</button>
-            </form>
+{{--            <form wire:submit="checkAnswer" class="flex">--}}
+{{--                <h1>1.</h1>--}}
+{{--                <button type="submit" class="bg-yellow-400 text-white p-1 rounded hover:bg-yellow-600 mx-auto">Controleer</button>--}}
+{{--            </form>--}}
         </div>
         <div class="flex justify-center">
             @if(session('status_red'))
@@ -76,7 +77,9 @@
                     </div>
                 </div>
                 <div class="text-center border border-gray-300">
-                    {{ $bedragen['ziek'] }}
+                    @if($liveGift)
+                        {{ $bedragen[$liveGift] }}
+                    @endif
                 </div>
                 <div class="text-center border border-gray-300">-</div>
             </div>
@@ -84,7 +87,7 @@
             <div class="flex justify-center">
                 <div class="flex">
                     <h1>2.</h1>
-                    <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" >Bevestigen</button>
+                    <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" wire:confirm="Weet u het zeker?">Bevestigen</button>
                 </div>
                 @if(session('bevestigd'))
                     <div class="border border-green-600 bg-green-200 m-2 p-2 rounded">
