@@ -59,9 +59,10 @@
             @endif
         </div>
         <div>
-            <div class="grid grid-cols-3 p-5">
+            <div class="grid grid-cols-4 p-5">
                 <div class="border border-gray-300 font-bold">Naam:</div>
                 <div class="border border-gray-300 font-bold">Gelegenheid:</div>
+                <div class="border border-gray-300 font-bold">Bedrag:</div>
                 <div class="border border-gray-300 font-bold">Status:</div>
                 <div class="text-center border border-gray-300">{{ $liveName }}
                     <div class="text-red-500">
@@ -74,13 +75,16 @@
                             @error('liveGift') {{ $message }} @enderror
                     </div>
                 </div>
+                <div class="text-center border border-gray-300">
+                    {{ $bedragen['ziek'] }}
+                </div>
                 <div class="text-center border border-gray-300">-</div>
             </div>
             {{-- LiveWire confirm message --}}
             <div class="flex justify-center">
                 <div class="flex">
                     <h1>2.</h1>
-                    <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" wire:confirm="Weet u het zeker?">Bevestigen</button>
+                    <button class="border p-1 my-1 rounded bg-almere hover:bg-blue-700 text-white" wire:click="storeRequest" >Bevestigen</button>
                 </div>
                 @if(session('bevestigd'))
                     <div class="border border-green-600 bg-green-200 m-2 p-2 rounded">

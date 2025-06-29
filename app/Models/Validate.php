@@ -8,10 +8,10 @@ class Validate extends Model
 {
     protected $table = 'validations';
 
+    //Mass assignable fields
     protected $fillable =
         [
             'name',
             'occassion'
         ];
-    //Mass assignable fields
 }

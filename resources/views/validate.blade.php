@@ -25,6 +25,7 @@
 {{--                    @endforeach--}}
 {{--            </ul>--}}
         </div>
+{{--        {{ $bedragen['geboorte'] }}--}}
     </div>
 </div>
 <livewire:show-latest/>
