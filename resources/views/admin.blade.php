@@ -10,22 +10,7 @@
         </div>
     </div>
     <div class="w-4/6 flex flex-col bg-white p-2 border border-gray-200">
-        <div class="mt-20 border border-gray-200 rounded-lg bg-white">
-            <div class="grid grid-cols-3 p-5">
-                <div class="border border-gray-300 font-bold">Naam:</div>
-                <div class="border border-gray-300 font-bold">Gelegenheid:</div>
-                <div class="border border-gray-300 font-bold">Status:</div>
-                <div class="text-center border border-gray-300"></div>
-                <div class="text-center border border-gray-300">40 jaar huwelijk</div>
-                <div class="text-center border border-gray-300">afgewezen</div>
-                <div class="text-center border border-gray-300"></div>
-                <div class="text-center border border-gray-300">12,5 jaar ambtenaar</div>
-                <div class="text-center border border-gray-300">toegekend 12-5-2025</div>
-                <div class="text-center border border-gray-300"></div>
-                <div class="text-center border border-gray-300">30ste verjaardag</div>
-                <div class="text-center border border-gray-300">toegekend 17-6-2025</div>
-            </div>
-        </div>
+        <livewire:admin-panel :requests="$requests"/>
     </div>
     <div class="w-1/6 flex flex-col justify-center bg-white border border-gray-200 rounded-r-lg p-2 overflow-auto">
         <div class="h-1/5">

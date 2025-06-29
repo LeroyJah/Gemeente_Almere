@@ -8,25 +8,8 @@
     <div>
         <div class="m-5">
             <livewire:validator :bedragen="$bedragen"/>
-{{--            <button class="ml-6 p-1 border border-solid rounded bg-almere text-white hover:bg-blue-700">voeg toe</button>--}}
-        </div>
-        <div class="overflow-auto">
-{{--                        @foreach($bedragen as $bedrag => $value)--}}
-{{--                            {{ $value }}--}}
-{{--                        @endforeach--}}
-
-{{--                @foreach($bedragen as $bedrag)--}}
-{{--                    {{ $bedrag }}--}}
-{{--                @endforeach--}}
-
-{{--                <ul>--}}
-{{--                    @foreach(array_keys($bedragen) as $key)--}}
-{{--                        <li> {{ $key }} </li>--}}
-{{--                    @endforeach--}}
-{{--            </ul>--}}
         </div>
     </div>
 </div>
 <livewire:show-latest/>
-
 </x-layout.layout>
