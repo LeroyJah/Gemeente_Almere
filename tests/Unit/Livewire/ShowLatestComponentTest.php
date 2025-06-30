@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Livewire;
+namespace Tests\Unit\Livewire;
 
 use App\Livewire\ShowLatest;
 use Livewire\Livewire;

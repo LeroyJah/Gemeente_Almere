@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\Feature\Livewire;
+namespace Tests\Unit\Livewire;
 
 use App\Livewire\AdminPanel;
-use Tests\TestCase;
 use Livewire\Livewire;
+use Tests\TestCase;
 
 class AdminPanelComponentTest extends TestCase
 {
