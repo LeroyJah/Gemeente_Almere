@@ -15,7 +15,12 @@
     </div>
     <div class="w-6/8 flex flex-col bg-white p-2 border border-gray-200">
         <div class="h-1/5">
-            <h1 class="text-center">Aanvraag geschiedenis:</h1>
+            <div class="flex justify-end">
+                <livewire:logout/>
+            </div>
+            <div>
+                <h1 class="text-center">Aanvraag geschiedenis:</h1>
+            </div>
         </div>
         <div class="h-4/5">
             <livewire:admin-panel/>
