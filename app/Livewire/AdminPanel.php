@@ -8,9 +8,9 @@ class AdminPanel extends Component
 {
     public $requests;
 
-    public function mount($requests)
+    public function mount()
     {
-        $this->requests = $requests;
+        $this->requests = Validate::all();
     }
 
     public function delete($id)

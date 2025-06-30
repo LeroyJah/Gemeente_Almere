@@ -35,7 +35,7 @@
             <h1 class="text-center">Aanvraag geschiedenis:</h1>
         </div>
         <div class="h-4/5">
-            <livewire:admin-panel :requests="$requests"/>
+            <livewire:admin-panel/>
         </div>
     </div>
 </div>
