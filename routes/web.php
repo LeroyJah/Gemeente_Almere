@@ -5,7 +5,7 @@ use App\Http\Controllers\ValidateController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Middleware\EnsureTokenIsValid;
-use App\Livewire;
+use App\Livewire\Login;
 
 Route::get('/', [HomeController::class,'getView'])->name('homeView');
 Route::get('/download/view', [ValidateController::class,'getView'])->name('validateView');

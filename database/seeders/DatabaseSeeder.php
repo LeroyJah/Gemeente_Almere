@@ -17,5 +17,11 @@ class DatabaseSeeder extends Seeder
             PriceSeeder::class,
             RequestSeeder::class
         ]);
+
+        User::create([
+            'name' => 'admin',
+            'email' => 'admin@outlook.com',
+            'password' => 'admin'
+        ]);
     }
 }
