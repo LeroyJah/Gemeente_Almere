@@ -2,7 +2,10 @@
 
 namespace Tests\Acceptance\Livewire;
 
-class RequestToDatabaseTest
+use Livewire\Livewire;
+use Tests\TestCase;
+
+class RequestToDatabaseTest extends TestCase
 {
     public function test_user_request_is_saved_to_database()
     {
