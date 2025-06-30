@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit\Livewire;
+namespace Tests\Feature\Livewire;
 
 use App\Livewire\Validator;
 use Livewire\Livewire;

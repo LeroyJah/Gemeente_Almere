@@ -1,8 +1,6 @@
 <?php
 
-namespace Tests\Acceptance;
-
-use App\Models\Validate;
+namespace Tests\Acceptance\Livewire;
 
 class RequestToDatabaseTest
 {
