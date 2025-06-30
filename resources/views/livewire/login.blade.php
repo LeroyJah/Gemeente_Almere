@@ -31,7 +31,9 @@
                 </div>
             </form>
             @if(isset($loginMessage))
-                {{ $loginMessage }}
+                <div class="text-red-500 text-center">
+                    {{ $loginMessage }}
+                </div>
             @endif
         </div>
     </div>
