@@ -17,11 +17,5 @@ class DatabaseSeeder extends Seeder
             PriceSeeder::class,
             RequestSeeder::class
         ]);
-        // User::factory(10)->create();
-
-//        User::factory()->create([
-//            'name' => 'Test User',
-//            'email' => 'test@example.com',
-//        ]);
     }
 }

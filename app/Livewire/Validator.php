@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Validate;
 use Livewire\Attributes\Rule;
 use Livewire\Component;
+use App\Models\Price;
 
 class Validator extends Component
 {
@@ -16,16 +17,15 @@ class Validator extends Component
     public $liveName;
     #[Rule('required',message:'Kies een van de pakketten.')]
     public $liveGift;
-    public $rightAnswer = ['Jahmil','30ste verjaardag'];
 
     public $bedragen;
 
     public $showErrors = false;
 
 
-    public function mount($bedragen)
+    public function mount()
     {
-        $this->bedragen = $bedragen; //grabbing validation array from view
+        $this->bedragen = Price::all()->pluck('amount','occassion'); //grabbing validation array from view
     }
     public function checkAnswer()
     {

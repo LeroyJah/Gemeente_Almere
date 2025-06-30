@@ -14,10 +14,9 @@ class CreateRequestTest extends TestCase{
     public function test_user_request_gets_validated()
     {
         Livewire::test(Validator::class)
-            ->set('name','Marley')
-            ->set('occassion','34ste verjaardag')
-            ->set('amount',50)
+            ->set('liveName','Marley')
+            ->set('liveGift','40ste verjaardag')
             ->call('storeRequest')
-            ->assertHasErrors();
+            ->assertHasNoErrors(['liveName','liveGift']);
     }
 }
