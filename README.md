@@ -1,28 +1,28 @@
 #  Validator Gemeente Almere
 
-Een Laravel + Livewire applicatie voor het aanvragen en beheren van gebruikersaanvragen voor de Lief & Leed pot van de Gemeente Almere. Gebruikers kunnen een aanvraag indienen via een formulier. Admins kunnen aanvragen beheren via een beheerderspaneel (CRUD).
+Een Laravel + Livewire applicatie voor het aanvragen en beheren van gebruikersverzoeken voor de Lief & Leed pot van de Gemeente Almere. Gebruikers kunnen een aanvraag indienen via een formulier. Admins kunnen aanvragen beheren via een beheerderspaneel (CRUD).
 
 ---
-##  Pre-Installatie benodigden
-PHP v8.2
-Composer
-MYSQL
+##  Pre-Installatie benodigdheden
+- PHP v8.2
+- Composer
+- MYSQL
 
 ##  Installatie-instructies
 
-Volg de onderstaande stappen om het project lokaal op te zetten nadat het gecloned is:
+Volg de onderstaande stappen om het project lokaal op te zetten nadat je het gecloned hebt:
 
 ### 1. Database initialiseren
 Ga naar je terminal en log in tot je MYSQL database. Typ vervolgens:
-`Create database gemeente;`
+- `Create database gemeente;`
 
 
 ### 2. .env initialiseren
 open de .env in de root van de applicatie
 verander naar deze waarde:
-`DB_DATABASE=gemeente`
-`DB_USERNAME=root`
-`DB_PASSWORD=`
+- `DB_DATABASE=gemeente`
+- `DB_USERNAME=root`
+- `DB_PASSWORD=`
 
 ### 3. Packages installeren
 `composer install`

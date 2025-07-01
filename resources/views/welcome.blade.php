@@ -10,7 +10,7 @@
         <div class="flex justify-center">
             <img src="{{ asset('images/stadhuis.jpg') }}" alt="" class="h-140 w-5/6 rounded relative shadow-lg z-0">
             <div class="absolute z-10 bg-almere text-white border-2 border-white rounded p-4 w-100 flex justify-center mt-20">
-                Welkom {{ $namen[rand(0,10)] }}
+                Welkom {{ $namen[rand(0,10)] }} {{-- Selects a name at random to greet you at the homepage --}}
             </div>
             <div class="grid grid-cols-3 z-10 absolute gap-14 bottom-4 slide-in">
                 <div>
@@ -24,11 +24,6 @@
                                     Voer de naam in van de persoon die u wilt verassen. <a href="{{ route('validateView') }}" class="text-blue-400 hover:text-blue-800">Start je aanvraag</a>
                                 </p>
                         </div>
-{{--                        <div class="px-6 pt-4 pb-2">--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>--}}
-{{--                        </div>--}}
                     </div>
                 </div>
                 <div>
@@ -44,11 +39,6 @@
                             </div>
                             </p>
                         </div>
-{{--                        <div class="px-6 pt-4 pb-2">--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>--}}
-{{--                        </div>--}}
                     </div>
                 </div>
                 <div>
@@ -58,16 +48,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
                             </svg>
-
                             <p class="text-gray-700 text-base">
                                 Als uw aanvraag is goedgekeurd zal u een bevestigings mail ontvangen.
                             </p>
                         </div>
-{{--                        <div class="px-6 pt-4 pb-2">--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>--}}
-{{--                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>--}}
-{{--                        </div>--}}
                     </div>
                 </div>
             </div>

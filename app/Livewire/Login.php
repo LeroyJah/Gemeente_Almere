@@ -15,7 +15,7 @@ class Login extends Component
 
     public function authenticate()
     {
-        $valid = Auth::attempt(['email' => $this->email, 'password' => $this->password]);
+        $valid = Auth::attempt(['email' => $this->email, 'password' => $this->password]);//tries to verify through records in the UserModel
 
         if ($valid) {
             $this->redirectIntended('/admin');

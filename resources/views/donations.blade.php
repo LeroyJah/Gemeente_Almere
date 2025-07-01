@@ -56,7 +56,6 @@
     </div>
     <div class="w-1/6 flex flex-col justify-center bg-white border border-gray-200 rounded-r-lg p-2 overflow-auto">
         <div class="h-1/5">
-
         </div>
         <div class="h-4/5">
             <h1 class="font-bold">Recente sponsors:</h1>
@@ -81,9 +80,4 @@
         </div>
     </div>
 </div>
-@if(isset($transcribe))
-    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
-        {{ $transcribe }}
-    </div>
-@endif
 </x-layout.layout>

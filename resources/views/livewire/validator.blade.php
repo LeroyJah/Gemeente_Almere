@@ -42,24 +42,13 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center">
-            @if(session('status_red'))
-                <div class="border border-red-600 bg-red-200 m-2 p-2 rounded">
-                    {{ session('status_red') }}
-                </div>
-            @elseif(session('status_green'))
-                <div class="border border-green-600 bg-green-200 m-2 p-2 rounded">
-                    {{ session('status_green') }}
-                </div>
-            @endif
-        </div>
         <div>
             <div class="grid grid-cols-4 p-5">
                 <div class="border border-gray-300 font-bold">Naam:</div>
                 <div class="border border-gray-300 font-bold">Gelegenheid:</div>
                 <div class="border border-gray-300 font-bold">Bedrag:</div>
                 <div class="border border-gray-300 font-bold">Status:</div>
-                <div class="text-center border border-gray-300">{{ $liveName }}
+                <div class="text-center border border-gray-300">{{ $liveName }} {{-- The input data is displayed live as the user types --}}
                     <div class="text-red-500">
                         @error('liveName')
                         <div wire:transition>
