@@ -9,8 +9,24 @@
     }
 }
 
+@keyframes slideInFromRight {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 .slide-in{
     animation: slideInFromBottom 1s ease-in forwards;
+}
+
+.slide-in-right{
+    animation: slideInFromRight 1s ease-in forwards;
+    animation-delay: 1.5s;
 }
 
 /*.slide-in-1s {*/
