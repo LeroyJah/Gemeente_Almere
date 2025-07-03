@@ -9,7 +9,7 @@ use App\Http\Controllers\LoginController;
 //Homepage
 Route::get('/', [HomeController::class,'getView'])->name('homeView');
 //Request validator page
-Route::get('/download/view', [ValidateController::class,'getView'])->name('validateView');
+Route::get('/validate', [ValidateController::class,'getView'])->name('validateView');
 //Login page
 Route::get('/login', [LoginController::class,'getView'])->name('login');
 //Admin page, guarded by a middleware

@@ -13,9 +13,12 @@
                 <div class="bg-almere text-white border-2 border-white rounded p-4 w-100 flex justify-center mt-20">
                     Welkom {{ $namen[rand(0,10)] }} {{-- Selects a name at random to greet you at the homepage --}}
                 </div>
-                <div class="bg-white rounded absolute mt-50 h-60 p-4 w-100 slide-in-right">
+                <div class="bg-white rounded-xl absolute mt-45 h-68 p-4 w-100 slide-in-right mr-215 shadow-lg">
                     <div>
-                        <h1>yeikshemas</h1>
+                        <h1 class="text-almere">Welkom bij het geschenkportaal van de Lief & Leed. Lief & Leed heeft een schenkingpot opgezet, zodat collega's in staat worden gesteld om geschenken aan te schaffen voor hun mede-collega's. Denk hierbij aan mooie gelegenheden zoals verjaardagen, felicitaties voor jubilea, huwelijken, pensioenen, enzovoort.
+                            <br>
+                            <br>
+                            Volg de stappen hieronder om uw aanvraag te starten.</h1>
                     </div>
                 </div>
             </div>
