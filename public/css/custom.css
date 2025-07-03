@@ -9,6 +9,10 @@
     }
 }
 
+.slide-in-right {
+    visibility: hidden;
+}
+
 @keyframes slideInFromRight {
     from{
         transform: translateX(100%);
@@ -17,6 +21,7 @@
     to{
         transform: translateX(0%);
         opacity: 1;
+        visibility: visible;
     }
 }
 
