@@ -1,5 +1,4 @@
-<x-layout.layout2>
-    <div class="flex justify-center">
+<div class="flex justify-center">
         <x-slot:heading>
             Welkom bij de Lief & Leed aanvraag assistent
         </x-slot:heading>
@@ -67,4 +66,4 @@
             </div>
         </div>
     </body>
-</x-layout.layout2>
+</div>
