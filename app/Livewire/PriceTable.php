@@ -14,6 +14,11 @@ class PriceTable extends Component
         $this->prices = Price::all();
     }
 
+    public function edit($currentArrayIndex)
+    {
+        dd($currentArrayIndex);
+    }
+
     public function render()
     {
         return view('livewire.price-table');
