@@ -6,6 +6,7 @@
     <title>Gemeente</title>
     @vite('resources/css/app.css')
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+        <link rel="icon" href="{{ asset('images/Gemeente-Almere.png') }}">
 </head>
 <body class="h-full">
 <!--
