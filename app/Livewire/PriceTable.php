@@ -16,6 +16,7 @@ class PriceTable extends Component
 
     public function edit($currentArrayIndex)
     {
+
         dd($currentArrayIndex);
     }
 

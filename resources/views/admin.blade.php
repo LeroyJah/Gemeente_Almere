@@ -3,7 +3,7 @@
     Admin Dasboard
 </x-slot:heading>
 <div class="flex flex-row m-2 h-[70vh] border border-gray-200 rounded-lg">
-    <div class="w-5/20 bg-white flex flex-col justify-center border border-gray-200 rounded-l-lg p-2">
+    <div class="w-6/20 bg-white flex flex-col justify-center border border-gray-200 rounded-l-lg p-2">
         <div class="h-1/5 flex justify-center">
             <h1>Aanvraag bedragen:</h1>
         </div>
@@ -13,7 +13,7 @@
         <div class="h-1/5 flex justify-center">
         </div>
     </div>
-    <div class="w-15/20 flex flex-col bg-white p-2 border border-gray-200">
+    <div class="w-12/20 flex flex-col bg-white p-2 border border-gray-200">
         <div class="h-1/5">
             <div class="flex justify-end">
                 <livewire:logout/>
