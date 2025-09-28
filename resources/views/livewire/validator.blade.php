@@ -7,7 +7,7 @@
             <button class="ml-2 px-2 border rounded bg-blue-300 hover:bg-blue-700 text-white" wire:click="clearFields">clear</button>
         </div>
         <div class="flex flex-row">
-            <div class="w-1/3 p-2 flex justify-center">
+            <div class="w-1/4 p-2 flex justify-center">
                 <div>
                     <h1 class="font-bold">Verjaardagen:</h1>
                     <select wire:model.live="liveGift">
@@ -19,7 +19,7 @@
                     </select>
                 </div>
             </div>
-            <div class="w-1/3 p-2 flex justify-center">
+            <div class="w-1/4 p-2 flex justify-center">
                 <div>
                     <div class="h-2/5">
                         <h1 class="font-bold">Huwelijk:</h1>
@@ -31,9 +31,19 @@
                     </div>
                 </div>
             </div>
-            <div class="w-1/3 p-2 flex justify-center">
+            <div class="w-1/4 p-2 flex justify-center">
                 <div>
                     <h1 class="font-bold">Jaren ambtenaar:</h1>
+                    <select wire:model.live="liveGift">
+                        <option value="12,5 jaar ambtenaar">12,5 jaar</option>
+                        <option value="25 jaar ambtenaar">25 jaar</option>
+                        <option value="40 jaar ambtenaar">40 jaar</option>
+                    </select>
+                </div>
+            </div>
+                        <div class="w-1/4 p-2 flex justify-center">
+                <div>
+                    <h1 class="font-bold">Absenties:</h1>
                     <select wire:model.live="liveGift">
                         <option value="12,5 jaar ambtenaar">12,5 jaar</option>
                         <option value="25 jaar ambtenaar">25 jaar</option>

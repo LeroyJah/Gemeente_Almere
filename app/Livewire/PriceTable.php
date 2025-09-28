@@ -7,17 +7,22 @@ use Livewire\Component;
 
 class PriceTable extends Component
 {
-    public $prices;
+    public $allPrices;
+
+    public $updatePrice;
+
+
 
     public function mount()
     {
-        $this->prices = Price::all();
+        $this->allPrices = Price::all();
     }
 
     public function edit($currentArrayIndex)
     {
 
         dd($currentArrayIndex);
+        //the button needs to turn into an input field OR i just make sure there already is an input field
     }
 
     public function render()

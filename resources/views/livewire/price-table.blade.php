@@ -5,10 +5,10 @@
         <div class="border border-gray-300 font-bold">Bedrag:</div>
         <div class="border border-gray-300 font-bold"></div>
         <div class="border border-gray-300 font-bold">Edit:</div>
-        @foreach($prices as $price)
+        @foreach($allPrices as $price)
             <div class="border border-gray-300 col-span-2">{{ $price->occassion }}</div>
             <div class="border border-gray-300 text-center">€{{ $price->amount }}</div>
-            <div class="border border-gray-300 text-center"> <input type="text" size="5" maxlength="2" placeholder="Edit"class="border rounded m-1"></div>
+            <div class="border border-gray-300 text-center"> <input type="text" wire:model="updatePrice" size="5" maxlength="2" placeholder="Edit"class="border rounded m-1"></div>
             <div class="border border-gray-300 text-center">
                 <!-- <form wire:submit="edit">
                     <button type="submit" class="border rounded my-1 px-1 bg-gray-200 hover:bg-gray-400">
