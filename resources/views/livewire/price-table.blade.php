@@ -15,7 +15,9 @@
         @foreach($allPrices as $price)
             <div class="border border-gray-300 col-span-2">{{ $price->occassion }}</div>
             <div class="border border-gray-300 text-center">€{{ $price->amount }}</div>
-            <div class="border border-gray-300 text-center"> <input type="text" wire:model.live="updatePrice" size="5" maxlength="2" placeholder="Edit"class="border rounded m-1"></div>
+            <div class="border border-gray-300 text-center">
+                <input type="text" wire:model.live="newPrice" size="5" maxlength="2" placeholder="Edit"class="border rounded m-1">
+            </div>
             <div class="border border-gray-300 text-center">
                 <!-- <form wire:submit="edit">
                     <button type="submit" class="border rounded my-1 px-1 bg-gray-200 hover:bg-gray-400">

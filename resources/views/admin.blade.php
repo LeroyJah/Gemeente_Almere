@@ -6,6 +6,11 @@
     <div class="w-6/20 bg-white flex flex-col justify-center border border-gray-200 rounded-l-lg p-2">
         <div class="h-1/5 flex justify-center">
             <h1>Aanvraag bedragen:</h1>
+            @if(session('accepted'))
+            <div class="border border-green-600 bg-green-200 m-2 p-2 rounded">
+                        {{ session('accepted') }}
+                    </div>
+            @endif
         </div>
         <div class="h-3/5 overflow-scroll p-5">
             <livewire:price-table/>

@@ -12,7 +12,7 @@ class PriceTable extends Component
     public $allPrices;
 
     #[Rule('regex:/^[0-9]*$/', message:'Dit veld mag alleen cijfers bevatten.')]
-    public $updatePrice;
+    public $newPrice;
 
 
 
@@ -25,8 +25,21 @@ class PriceTable extends Component
     {
         $this->validate();
 
-        dd($currentArrayIndex);
+        $currentPrice = Price::find($currentArrayIndex);
+
+        $currentPrice->amount = $this->newPrice;
+
+        $currentPrice->save();
+
+        return redirect()->route('admin')->with(session()->flash('accepted','De prijs is succesvol aangepast.'));
+
         //the button needs to turn into an input field OR i just make sure there already is an input field
+
+        // if( $input === $this->rightAnswer){ //validation tester
+        //     return redirect()->route('validateView')->with(session()->flash('status_green','Uw verzoek is beschikbaar.'));
+        // }else{
+        //     return redirect()->route('validateView')->with(session()->flash('status_red','Uw verzoek is niet beschikbaar.'));
+        // }
     }
 
     public function render()

@@ -32,12 +32,6 @@ class Validator extends Component
         $this->validate();
 
         $input = [ucfirst($this->liveName),$this->liveGift]; //Capitalizes the first letter of each name
-
-        if( $input === $this->rightAnswer){ //validation tester
-            return redirect()->route('validateView')->with(session()->flash('status_green','Uw verzoek is beschikbaar.'));
-        }else{
-            return redirect()->route('validateView')->with(session()->flash('status_red','Uw verzoek is niet beschikbaar.'));
-        }
     }
 
     public function storeRequest()
