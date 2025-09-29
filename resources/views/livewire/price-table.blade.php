@@ -1,7 +1,7 @@
 <div>
     {{-- The Master doesn't talk, he acts. --}}
     <div class="h-6 text-red-400">
-        @error('updatePrice')
+        @error('newPrice')
         <div wire:transition>
             {{ $message }}
         </div>
