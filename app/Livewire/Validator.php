@@ -27,12 +27,6 @@ class Validator extends Component
     {
         $this->bedragen = Price::all()->pluck('amount','occassion'); //grabbing validation array from view
     }
-    public function checkAnswer()
-    {
-        $this->validate();
-
-        $input = [ucfirst($this->liveName),$this->liveGift]; //Capitalizes the first letter of each name
-    }
 
     public function storeRequest()
     {

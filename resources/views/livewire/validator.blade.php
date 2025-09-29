@@ -45,9 +45,13 @@
                 <div>
                     <h1 class="font-bold">Absenties:</h1>
                     <select wire:model.live="liveGift">
-                        <option value="12,5 jaar ambtenaar">12,5 jaar</option>
-                        <option value="25 jaar ambtenaar">25 jaar</option>
-                        <option value="40 jaar ambtenaar">40 jaar</option>
+                        <option value="geboorte">geboorte</option>
+                        <option value="ziek">ziek</option>
+                        <option value="ziek 3 weken">ziek 3 weken</option>
+                        <option value="ziek 3 maanden">ziek 3 maanden</option>
+                        <option value="ziekenhuis opname">ziekenhuis opname</option>
+                        <option value="pensioen">pensioen</option>
+                        <option value="overlijden">overlijden</option>
                     </select>
                 </div>
             </div>

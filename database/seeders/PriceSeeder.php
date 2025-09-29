@@ -11,9 +11,9 @@ class PriceSeeder extends Seeder
     private $bedragen = [
         ["occassion" => "geboorte", "amount" => 25],
         ["occassion" => "ziek", "amount" => 25],
-        ["occassion" => "ziek-3-weken", "amount" => 25],
-        ["occassion" => "ziek-3-maanden", "amount" => 25],
-        ["occassion" => "ziekenhuis-opname", "amount" => 25],
+        ["occassion" => "ziek 3 weken", "amount" => 25],
+        ["occassion" => "ziek 3 maanden", "amount" => 25],
+        ["occassion" => "ziekenhuis opname", "amount" => 25],
         ["occassion" => "12,5 jaar huwelijk", "amount" => 25],
         ["occassion" => "25 jaar huwelijk", "amount" => 25],
         ["occassion" => "40 jaar huwelijk", "amount" => 40],

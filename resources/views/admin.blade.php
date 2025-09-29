@@ -22,7 +22,7 @@
         <div class="h-1/5 flex justify-center">
         </div>
     </div>
-    <div class="w-14/20 flex flex-col bg-white p-2 border border-gray-200">
+    <div class="w-14/20 flex flex-col bg-white p-2 border border-gray-200 overflow-auto">
         <div class="h-1/5">
             <div class="flex justify-end">
                 <livewire:logout/>
@@ -31,7 +31,10 @@
                 <h1 class="text-center">Aanvraag geschiedenis:</h1>
             </div>
         </div>
-        <div class="h-3/5 pt-6">
+        <div class="h-3/5">
+            <div class="flex justify-end mr-5">
+                <livewire:update-prices/>
+            </div>
             <livewire:admin-panel/>
         </div>
         <div class="h-1/5">
