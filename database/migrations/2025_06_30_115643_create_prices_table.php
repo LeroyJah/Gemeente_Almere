@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('occassion');
             $table->integer('amount');
+            $table->string('updated_at')->nullable();
         });
     }
 

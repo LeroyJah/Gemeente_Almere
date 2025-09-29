@@ -31,7 +31,7 @@ class PriceTable extends Component
 
         $currentPrice->save();
 
-        return redirect()->route('admin')->with(session()->flash('accepted','De prijs is succesvol aangepast.'));
+        return redirect()->route('adminView')->with(session()->flash('accepted','De prijs is succesvol aangepast.'));
 
         //the button needs to turn into an input field OR i just make sure there already is an input field
 

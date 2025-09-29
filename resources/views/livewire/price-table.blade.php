@@ -25,7 +25,7 @@
                         <img src="{{ asset('images/gear_icon.svg') }}" alt="" width="20" height="20">
                     </button>
                 </form> -->
-                <button class="border rounded my-1 px-1 bg-gray-200 hover:bg-gray-400" wire:click="edit({{ $price->id }})">
+                <button class="cursor-pointer border rounded my-1 px-1 bg-gray-200 hover:bg-gray-400" wire:click="edit({{ $price->id }})">
                     <img src="{{ asset('images/gear_icon.svg') }}" alt="" width="20" height="20">
                 </button>
             </div>
