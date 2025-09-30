@@ -6,7 +6,7 @@
     <div class="w-6/20 bg-white flex flex-col justify-center border border-gray-200 rounded-l-lg p-2">
         <div class="h-1/5 flex flex-col justify-center">
             <div class="h-1/2">
-                <h1 class="text-center">Aanvraag bedragen:</h1>
+                <h1 class="text-center">Verander hoogte bedragen:</h1>
             </div>
             <div class="h-1/2">
                 @if(session('accepted'))
@@ -43,7 +43,7 @@
             <livewire:admin-panel/>
         </div>
         <div class="h-1/5">
-            <div class="text-center">Aanvraag gelegenheden:</div>
+            <div class="text-center">Maak nieuwe gelegenheid:</div>
             <livewire:create-occassion/>
         </div>
     </div>

@@ -11,13 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('prices', function (Blueprint $table) {
-            $table->id();
-            $table->string('occassion');
-            $table->integer('amount');
-            $table->string('updated_at')->nullable();
-            $table->string('created_at')->nullable();
-        });
+        //
     }
 
     /**
@@ -25,6 +19,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('prices');
+        //
     }
 };

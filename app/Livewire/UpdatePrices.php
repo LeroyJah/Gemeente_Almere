@@ -15,7 +15,7 @@ class UpdatePrices extends Component
     public function mount()
     {
         $this->prevEntries = Validate::all();
-        $this->newPrices = Price::all()->pluck('amount','occassion');; //pluck grabs the first parameter as data and the second as the array key
+        $this->newPrices = Price::all()->pluck('amount','occassion'); //pluck grabs the first parameter as data and the second as the array key
 
     }
 

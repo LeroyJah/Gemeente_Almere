@@ -41,7 +41,7 @@
                     </select>
                 </div>
             </div>
-                        <div class="w-1/4 p-2 flex justify-center">
+            <div class="w-1/4 p-2 flex justify-center">
                 <div>
                     <h1 class="font-bold">Absenties:</h1>
                     <select wire:model.live="liveGift">
