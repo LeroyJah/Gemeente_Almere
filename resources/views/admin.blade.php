@@ -33,6 +33,11 @@
         </div>
         <div class="h-3/5">
             <div class="flex justify-end mr-5">
+                @if(session('updated'))
+                    <div class="border border-blue-600 bg-blue-200 mr-32 px-1 rounded">
+                        {{ session('updated') }}
+                    </div>
+                @endif
                 <livewire:update-prices/>
             </div>
             <livewire:admin-panel/>
