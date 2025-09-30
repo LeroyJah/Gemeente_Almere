@@ -44,6 +44,7 @@
         </div>
         <div class="h-1/5">
             <div class="text-center">Aanvraag gelegenheden:</div>
+            <livewire:create-occassion/>
         </div>
     </div>
 </div>
