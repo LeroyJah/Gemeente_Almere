@@ -55,7 +55,14 @@
                     </select>
                 </div>
             </div>
-            dd({{$newOccassions}})
+            <div class="p-2">
+            <h1 class="font-bold">New:</h1>
+            <select wire:model.live="liveGift">
+                @foreach($newOccassions as $newOccassion)
+                    <option value="{{$newOccassion}}">{{$newOccassion}}</option>
+                @endforeach
+            </select>
+            </div>
         </div>
         <div>
             <div class="grid grid-cols-4 p-5">
