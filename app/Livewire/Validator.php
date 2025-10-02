@@ -22,6 +22,8 @@ class Validator extends Component
 
     public $showErrors = false;
 
+    public $newOccassions;
+
 
     public function mount()
     {

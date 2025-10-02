@@ -55,6 +55,7 @@
                     </select>
                 </div>
             </div>
+            dd({{$newOccassions}})
         </div>
         <div>
             <div class="grid grid-cols-4 p-5">

@@ -8,7 +8,7 @@ class ValidateController extends Controller
     private $newOccassions;
 
     public function __construct(){
-        $this->newOccassions = Price::all()->pluck('occassion','id');
+        $this->newOccassions = Price::where('created_at','!=',null)->pluck('occassion','id');
     }
 
     public function getView(){
