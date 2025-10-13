@@ -1,5 +1,7 @@
+@props(['hidden' => false])
+
 <div>
-    <div class="grid grid-cols-5 p-5">
+    <div class="grid grid-cols-5 p-5 overflow-auto">
         <div class="border border-gray-300 font-bold">Naam:</div>
         <div class="border border-gray-300 font-bold">Gelegenheid:</div>
         <div class="border border-gray-300 font-bold">Status:</div>
