@@ -40,7 +40,7 @@
                 @endif
                 <livewire:update-prices/>
             </div>
-            <livewire:admin-panel :hidden="true"/>
+            <livewire:admin-panel/>
         </div>
         <div class="h-1/5">
             <div class="text-center">Maak nieuwe gelegenheid:</div>

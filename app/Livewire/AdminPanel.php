@@ -7,15 +7,11 @@ use Livewire\Component;
 class AdminPanel extends Component
 {
     public $requests;
-    public $buttonIsClicked = false;
+
 
     public function mount()
     {
         $this->requests = Validate::all();
-    }
-
-    public function buttonIsClicked(){
-        $this->buttonIsClicked == false ? $buttonIsClicked = true : $buttonIsClicked = false;
     }
 
     public function delete($id)
