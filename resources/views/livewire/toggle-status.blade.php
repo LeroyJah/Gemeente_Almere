@@ -1,5 +1,5 @@
 @props(['request'])
 
 <div>
-    <button class="w-full text-center border border-gray-300 hover:bg-almere hover:text-white hover:cursor-pointer" wire:click="buttonIsClicked">{{ $buttonStatus }}</button>
+    <button class="{{ $buttonStatus ? 'bg-blue-100': 'bg-red-100'}}" wire:click="buttonIsClicked">{{ $request }}</button>
 </div>
