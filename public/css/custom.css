@@ -43,10 +43,6 @@
 /*    animation-delay: 2s;*/
 /*}*/
 
-.request-status-wait{
-    w-full text-center border border-gray-300 hover:bg-almere hover:text-white hover:cursor-pointer
-}
-
-.request-status-active{
-
+.card-front, .card-back{
+   position: absolute; 
 }
