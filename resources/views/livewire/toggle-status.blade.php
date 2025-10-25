@@ -1,13 +1,19 @@
 @props(['request'])
 
-<div class="container">
-    <div class="card">
-        <div class="card-front">
-
+<!-- card-container -->
+<div class="container"> 
+    <!-- inner-card -->
+    <div class="relative transition duration-800">
+        <!-- front-card -->
+        <div class="absolute w-full text-center border border-gray-300 bg-orange-500 hover:bg-orange-200 text-white hover:cursor-pointer">
+            {{ 'Goedgekeurd'}}
         </div>
-        <div class="card-back">
-
+        <!-- back-card -->
+        <div class="absolute w-full text-center border border-gray-300 hover:bg-almere hover:text-white hover:cursor-pointer">
+            {{ 'In Afwachting' }}
         </div>
     </div>
-    <button class="{{ $buttonStatus ? 'w-full text-center border border-gray-300 bg-orange-500 hover:bg-orange-200 text-white hover:cursor-pointer': 'w-full text-center border border-gray-300 hover:bg-almere hover:text-white hover:cursor-pointer'}}" wire:click="buttonIsClicked">{{ $buttonStatus ? 'goedgekeurd' : $request}}</button>
 </div>
+
+<!-- <button class="{{ $buttonStatus ? 'w-full text-center border border-gray-300 bg-orange-500 hover:bg-orange-200 text-white hover:cursor-pointer': 'w-full text-center border border-gray-300 hover:bg-almere hover:text-white hover:cursor-pointer'}}" wire:click="buttonIsClicked">{{ $buttonStatus ? 'goedgekeurd' : $request}}</button> -->
+    
