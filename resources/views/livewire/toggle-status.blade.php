@@ -3,7 +3,7 @@
 <!-- card-container -->
 <div class="container"> 
     <!-- inner-card -->
-    <div class="relative transition duration-800">
+    <div class="relative transition duration-800 hover:[transform:rotateY(180deg)]">
         <!-- front-card -->
         <div class="absolute w-full text-center border border-gray-300 bg-orange-500 hover:bg-orange-200 text-white hover:cursor-pointer">
             {{ 'Goedgekeurd'}}
