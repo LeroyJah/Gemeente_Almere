@@ -3,9 +3,9 @@
 <!-- card-container -->
 <div class="group"> 
     <!-- inner-card -->
-    <div class="relative transition duration-800 transition-all duration-800 group-hover:[transform:rotateY(180deg)]" wire:click="buttonIsClicked">
+    <div class="relative transition duration-800 transition-all duration-800" wire:click="buttonIsClicked">
         <!-- front-card -->
-        <div class="absolute w-full text-center border border-gray-300 bg-orange-500 text-white hover:cursor-pointer group-hover:[transform:rotateY(180deg)]">
+        <div class="{{ $buttonStatus ? 'absolute w-full text-center border border-gray-300 bg-orange-500 text-white hover:cursor-pointer' : 'absolute w-full text-center border border-gray-300 bg-orange-500 text-white hover:cursor-pointer [transform:rotateY(180deg)]' }}">
             {{ $buttonStatus ? 'goedgekeurd' : $request}}
         </div>
         <!-- back-card -->
