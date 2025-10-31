@@ -5,11 +5,11 @@
     <!-- inner-card -->
     <div class="{{ $buttonStatus ? 'relative transition duration-800 transition-all' : 'relative transition duration-800 transition-all [transform: rotateY(180deg)]' }}" wire:click="buttonIsClicked">
         <!-- front-card -->
-        <div class="{{ $buttonStatus ? 'absolute w-full text-center border border-gray-300 bg-orange-500 text-white hover:cursor-pointer' : 'absolute w-full text-center border border-gray-300 bg-orange-500 text-white hover:cursor-pointer' }}">
-            {{ $buttonStatus ? 'goedgekeurd' : $request}}
+        <div class="absolute w-full text-center border border-gray-300 bg-orange-500 text-white hover:cursor-pointer">
+            {{ 'goedgekeurd' }}
         </div>
         <!-- back-card -->
-        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white hover:cursor-pointer [backface-visibility:hidden]">
+        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white hover:cursor-pointer">
             {{ 'In Afwachting' }}
         </div>
     </div>
