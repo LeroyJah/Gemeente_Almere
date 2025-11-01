@@ -1,16 +1,16 @@
 @props(['request'])
 
 <!-- card-container -->
-<div class="group"> 
+<div class="{{ $buttonStatus ? 'group hover:cursor-pointer' : 'group hover:cursor-pointer [transform:rotateY(180deg)]'}}" wire:click="buttonIsClicked"> 
     <!-- inner-card -->
-    <div class="{{ $buttonStatus ? 'relative transition duration-800 transition-all' : 'relative transition duration-800 transition-all [transform: rotateY(180deg)]' }}" wire:click="buttonIsClicked">
+    <div class="{{ 'relative' }}">
         <!-- front-card -->
-        <div class="absolute w-full text-center border border-gray-300 bg-orange-500 text-white hover:cursor-pointer">
-            {{ 'goedgekeurd' }}
+        <div class="absolute w-full text-center border border-gray-300 bg-orange-500 text-white">
+            {{ 'Goedgekeurd' }}
         </div>
         <!-- back-card -->
-        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white hover:cursor-pointer">
-            {{ 'In Afwachting' }}
+        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white">
+            {{ 'In Afwachting'}}
         </div>
     </div>
 </div>
