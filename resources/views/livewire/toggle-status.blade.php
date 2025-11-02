@@ -1,9 +1,9 @@
 @props(['request'])
 
 <!-- card-container -->
-<div class="{{ $buttonStatus ? 'group hover:cursor-pointer' : 'group hover:cursor-pointer [transform:rotateY(180deg)]'}}" wire:click="buttonIsClicked"> 
+<div class="group hover:cursor-pointer" wire:click="buttonIsClicked"> 
     <!-- inner-card -->
-    <div class="{{ 'relative' }}">
+    <div class="{{ $buttonStatus ? 'relative transition duration-500 [transform:rotateY(180deg)] [transform-style:preserve-3d]' : 'relative transition duration-500 [transform-style:preserve-3d]'}}">
         <!-- front-card -->
         <div class="absolute w-full text-center border border-gray-300 bg-orange-500 text-white">
             {{ 'Goedgekeurd' }}
