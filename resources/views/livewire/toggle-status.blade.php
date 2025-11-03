@@ -9,7 +9,7 @@
             {{ 'Goedgekeurd' }}
         </div>
         <!-- back-card -->
-        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white">
+        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white backface-hidden">
             {{ 'In Afwachting'}}
         </div>
     </div>
