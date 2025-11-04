@@ -5,13 +5,14 @@
     <!-- inner-card -->
     <div class="{{ $buttonStatus ? 'relative transition duration-500 [transform:rotateY(180deg)] [transform-style:preserve-3d]' : 'relative transition duration-500 [transform-style:preserve-3d]'}}">
         <!-- front-card -->
-        <div class="absolute w-full text-center border border-gray-300 bg-orange-500 text-white">
-            {{ 'Goedgekeurd' }}
-        </div>
-        <!-- back-card -->
-        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white backface-hidden">
+        <div class="absolute w-full text-center border border-gray-300 bg-almere text-white ">
             {{ 'In Afwachting'}}
         </div>
+        <!-- back-card -->
+        <div class="absolute w-full text-center border border-gray-300 bg-orange-500 text-white  [transform:rotateY(180deg)] backface-hidden">
+            {{ 'Goedgekeurd' }}
+        </div>
+
     </div>
 </div>
 
