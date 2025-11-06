@@ -8,7 +8,7 @@
         </div>
         @foreach($requests as $request)
             <div class="text-center border border-gray-300">{{ $request->name }}</div>
-            <div class="text-center border border-gray-300">{{ $request->occassion }}</div>
+            <div class="text-center border border-gray-300 px-1">{{ $request->occassion }}</div>
             <livewire:ToggleStatus :request="$request->status"/>
             <div class="text-center border border-gray-300">€{{ $request->amount }}</div>
             <div class="text-center border border-gray-300">

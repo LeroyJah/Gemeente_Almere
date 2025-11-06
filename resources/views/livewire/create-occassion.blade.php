@@ -8,7 +8,7 @@
             <input type="text" maxlength="30" class="w-full" wire:model="newOccassion">
         </div>
         <div class="border border-gray-300">
-            <input type="text" maxlength="2" class="w-full" wire:model="newPrice">
+            <input type="text" maxlength="3" class="w-full" wire:model="newPrice">
         </div>
         <div class="border border-gray-300 text-center">
             <button class="cursor-pointer border rounded px-1 bg-gray-200 hover:bg-gray-400 hover:text-white" wire:click="createOccassion">submit</button>
